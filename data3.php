@@ -18,6 +18,7 @@ require_once 'classes3.php';
 //];
 
 
+
 // PART 2
 
 $publications = array();
@@ -37,3 +38,16 @@ if(mysqli_connect_errno()){
 //echo '<pre>';
 //print_r($publications);
 //echo '</pre>';
+
+
+
+
+
+
+
+
+
+
+
+
+

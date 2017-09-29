@@ -6,6 +6,10 @@
 
 interface Vehicle
 {
+    const WHEEL = 4;
+    //static $prop = 123; // error
+    //static function myFunc(); // error
+
     public function info();
 }
 
@@ -19,6 +23,7 @@ interface Boat extends Vehicle{
 class Audi implements Car
 {
     public function info(){ // TODO: Implement info() method.
+        echo Vehicle::WHEEL;
         echo "<br />Audi is a Germany autocompany";
     }
     public function drive(){ // TODO: Implement drive() method.
@@ -31,7 +36,8 @@ $audi1->info();
 $audi1->drive();
 
 
-// PARt 2
+
+// PART 2
 
 class Amphibious implements Car, Boat
 {

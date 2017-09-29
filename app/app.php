@@ -17,6 +17,10 @@ final class App
         HelloWorld::boot insteadof GoodByeWorld;
     }
 
+    protected function hello_world()
+    {
+        echo "<br />HELLO WORLD !!! OVERRIDE";
+    }
     public function __construct()
     {
         echo "<br />Have created new instance from app/ folder.";
@@ -24,9 +28,10 @@ final class App
         $this->good_bye_world();
     }
 }
+
 $obj = new App();
 echo "<hr />";
 $obj->boot();
 echo "<hr />";
-$obj->hello_world();
+//$obj->hello_world(); // error
 $obj->good_bye_world();

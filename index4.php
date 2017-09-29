@@ -1,5 +1,6 @@
 <?php // Lesson 4
 // TYPE HINTING
+// METHOD'S SIGNATURE
 
 // PART 1
 
@@ -17,7 +18,7 @@ class Student
 }
 
 function onError(){
-    echo "Not valid type for argument";
+    echo "Not valid type for argument<hr />";
 }
 set_error_handler('onError');
 
@@ -41,8 +42,8 @@ function getName(User $user){ // with type hinting (or extended class SuperUser)
 
 $user1 = new User();
 $user1->first_name = 'Alex';
-echo getName($user1) . "<hr />";
-//echo getName('Gerard'); // error
+//echo getName($user1) . "<hr />";
+//echo "<br />" . getName('Gerard') . "<hr />"; // error
 
 class SuperUser extends User
 {
@@ -59,7 +60,6 @@ echo getName($user2) . "<hr />";
 
 // public function myFuncName ( $myVarName1, array $objectArgName, $myVarName2, ... )
 //   1       2         3            4          5         6              7        8
-
 // 1: encapsulation access modificator
 // 2: function
 // 3: function name (UpperCamelCase)

@@ -1,0 +1,32 @@
+
+    Object Oriented PHP
+
+    *****************************************
+
+    class
+    object
+    properties and methods
+
+    inheritance (extends)
+    encapsulation (public, protected, private)
+    polymorphism
+
+    $this->
+    self::
+    parent::
+
+    const properties
+    static properties/functions
+
+    constructor/destructor
+
+    type hinting
+    methods signature
+
+    abstract classes/methods
+    final classes/methods
+
+    interface (implements, multiple implementation)
+    trait ( :: insteadof )
+
+    magic methods

@@ -3,14 +3,15 @@
 // EXTENDING & ABSTRACTION
 // CONSTRUCTOR, DESTRUCTOR
 // PROPERTIES & METHODS
-// STATIC & CONST VARIABLES
-// ENCAPSULATION, ACCESS MODIFICATORS
+// CONST VARIABLES
+// ACCESS MODIFICATORS
 // SOME INTERESTING THINGS
 // $this->  &  self::  ACCESSING
 
 class Car
 {
     const WHEEL = 4; // wheels count
+    static $skin = false;
     public $speed; // ~ km per hour
     public $type; // machine type (firm, e.g. mercedes, audi, etc)
     public $color; // machine color
@@ -18,14 +19,12 @@ class Car
     public function __construct($speed = 100, $type = 'Mercedes'){
         $this->speed = $speed;
         $this->type = $type;
-        echo __CLASS__ . " / " . __METHOD__. "<hr />";
+        echo __CLASS__ . " / " . __METHOD__. " called!<hr />";
     }
-
     public function timeForDistance ($distance){
         $time = $distance / $this->speed; // $this not available in static functions
         return $time;
     }
-
     public function __destruct()
     {
         // TODO: Implement __destruct() method.

@@ -17,12 +17,10 @@ abstract class Publication
         $this->preview = $row['preview'];
         $this->type = $row['type'];
     }
-
     public function printItemGlobal()
     {
         echo "Type of current publication: " . $this->type;
     }
-
     abstract public function printItem();
 }
 
